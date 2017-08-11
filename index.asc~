@@ -1,0 +1,36 @@
+:source-highlighter: pygments
+:stem:
+
+// comenta
+
+= Atividades da Disciplina DCA0445  =
+
+== Aluna: Ana Theresa Fernandes de Oliveira Mancini  == 
+
+agora vem o texto normal 
+
+Fazer lista nao numerada
+*
+*
+**
+** 
+//linha em branco pra terminar a lista
+
+link:url [nome pra aparecer o hiperlink] ex : link: url[clique aqui]
+
+
+[[fig_hello, Hello]]
+//[.text-center]
+.Saida do programa hello
+image::figs/hello.png[Saida do programa hello, title==*Saida do programa hello"]
+
+<<exa_hello>> \\ assim faz referencia no texto
+
+[[exa_hello, Hello]]
+[source.cpp]
+.hello.cpp \\titulo da listagem 
+----
+include::exemplos/hello.cpp
+---- \\ o que tiver entre os 4 tracinhos são codigo fonte, pode copiar ou colar o código fonte ou botar a referência
+
+stem:[\int_a^b f(x) dx] \\ escreve equação como no latex
