@@ -441,34 +441,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_exercício_1">Exercício 1</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>agora vem o texto normal</p>
+<p>Utilizando o programa pixels.cpp como referência, foi implementado o programa regions.cpp. Esse programa solicita ao usuário as coordenadas de dois pontos P1 e P2 localizados dentro dos limites do tamanho da imagem. A partir desses pontos, o programa exibide a imagem com a região definida pelo retângulo de vértices opostos definidos pelos pontos P1 e P2 em negativo.</p>
 </div>
-<div class="paragraph">
-<p>Fazer lista nao numerada
-*
-*
-<strong>
-</strong></p>
-</div>
-<div class="paragraph">
-<p>link:url [nome pra aparecer o hiperlink] ex : link: url[clique aqui]</p>
-</div>
-<div id="fig_hello" class="imageblock">
+<div id="exa_regions" class="listingblock">
+<div class="title">regions.cpp</div>
 <div class="content">
-<img src="figs/hello.png" alt="Saida do programa hello">
-</div>
-<div class="title">Figure 1. =*Saida do programa hello"</div>
-</div>
-<div class="paragraph">
-<p><a href="#exa_hello">Hello</a> \\ assim faz referencia no texto</p>
-</div>
-<div id="exa_hello" class="listingblock cpp">
-<div class="title">hello.cpp \\titulo da listagem</div>
-<div class="content">
-<pre class="pygments highlight"><code>include::exemplos/hello.cpp
+<pre class="pygments highlight"><code data-lang="cpp">include::codigos/regions.cpp
 ---- \\ o que tiver entre os 4 tracinhos são codigo fonte, pode copiar ou colar o código fonte ou botar a referência
 
-stem:[\int_a^b f(x) dx] \\ escreve equação como no latex</code></pre>
+[[fig_hello, Hello]]
+//[.text-center]
+.Saida do programa hello
+image::figs/hello.png[Saida do programa hello, title==*Saida do programa hello"]
+
+&lt;&lt;exa_hello&gt;&gt; \\ assim faz referencia no texto</code></pre>
 </div>
 </div>
 </div>
@@ -476,7 +462,7 @@ stem:[\int_a^b f(x) dx] \\ escreve equação como no latex</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-08-11 19:29:40 GMT
+Last updated 2017-08-15 20:14:34 BRT
 </div>
 </div>
 <script type="text/x-mathjax-config">
