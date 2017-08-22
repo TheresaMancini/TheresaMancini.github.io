@@ -522,14 +522,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">argc</span><span class="tok-p">,</span> <span class="tok-kt">char</span><span class="tok-o">**</span> <span class="tok-n">argv</span><span class="tok-p">){</span>
   <span class="tok-n">Mat</span> <span class="tok-n">image</span><span class="tok-p">;</span>
-  <span class="tok-n">Vec3b</span> <span class="tok-n">val</span><span class="tok-p">;</span>
   <span class="tok-n">Point2i</span> <span class="tok-n">P1</span><span class="tok-p">,</span><span class="tok-n">P2</span><span class="tok-p">;</span>
 
   <span class="tok-n">image</span><span class="tok-o">=</span> <span class="tok-n">imread</span><span class="tok-p">(</span><span class="tok-n">argv</span><span class="tok-p">[</span><span class="tok-mi">1</span><span class="tok-p">],</span><span class="tok-n">CV_LOAD_IMAGE_GRAYSCALE</span><span class="tok-p">);</span>
   <span class="tok-k">if</span><span class="tok-p">(</span><span class="tok-o">!</span><span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">data</span><span class="tok-p">)</span>
     <span class="tok-n">cout</span> <span class="tok-o">&lt;&lt;</span> <span class="tok-s">&quot;a imagem não foi carregada&quot;</span> <span class="tok-o">&lt;&lt;</span> <span class="tok-n">endl</span><span class="tok-p">;</span>
    <span class="tok-n">cout</span> <span class="tok-o">&lt;&lt;</span><span class="tok-s">&quot;altura da imagem &quot;</span> <span class="tok-o">&lt;&lt;</span> <span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">rows</span> <span class="tok-o">&lt;&lt;</span><span class="tok-n">endl</span><span class="tok-p">;</span>
-	<span class="tok-n">cout</span> <span class="tok-o">&lt;&lt;</span><span class="tok-s">&quot;largura da imagem &quot;</span> <span class="tok-o">&lt;&lt;</span> <span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">cols</span> <span class="tok-o">&lt;&lt;</span><span class="tok-n">endl</span><span class="tok-p">;</span>
+   <span class="tok-n">cout</span> <span class="tok-o">&lt;&lt;</span><span class="tok-s">&quot;largura da imagem &quot;</span> <span class="tok-o">&lt;&lt;</span> <span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">cols</span> <span class="tok-o">&lt;&lt;</span><span class="tok-n">endl</span><span class="tok-p">;</span>
   <span class="tok-n">namedWindow</span><span class="tok-p">(</span><span class="tok-s">&quot;janela&quot;</span><span class="tok-p">,</span><span class="tok-n">WINDOW_AUTOSIZE</span><span class="tok-p">);</span>
   <span class="tok-n">imshow</span><span class="tok-p">(</span><span class="tok-s">&quot;janela&quot;</span><span class="tok-p">,</span><span class="tok-n">image</span><span class="tok-p">);</span>
 
@@ -583,21 +582,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <span class="tok-p">}</span></code></pre>
 </div>
 </div>
-<div id="fig_hello" class="imageblock">
+<div id="fig_biel" class="imageblock">
 <div class="content">
-<img src="figs/hello.png" alt="Saida do programa hello">
+<img src="imagens/biel.png" alt="Saida do programa hello">
 </div>
-<div class="title">Figure 1. =*Saida do programa hello"</div>
+<div class="title">Figure 1. Imagem Original</div>
 </div>
 <div class="paragraph">
-<p><a href="#exa_hello">[exa_hello]</a> \\ assim faz referencia no texto</p>
+<p><a href="#exa_biel">[exa_biel]</a> \\ assim faz referencia no texto</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-08-15 20:32:29 BRT
+Last updated 2017-08-22 11:41:25 BRT
 </div>
 </div>
 <script type="text/x-mathjax-config">

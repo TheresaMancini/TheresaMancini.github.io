@@ -6,14 +6,13 @@ using namespace std;
 
 int main(int argc, char** argv){
   Mat image;
-  Vec3b val;
   Point2i P1,P2; 
   
   image= imread(argv[1],CV_LOAD_IMAGE_GRAYSCALE);
   if(!image.data)
     cout << "a imagem não foi carregada" << endl;
    cout <<"altura da imagem " << image.rows <<endl;
-	cout <<"largura da imagem " << image.cols <<endl;
+   cout <<"largura da imagem " << image.cols <<endl;
   namedWindow("janela",WINDOW_AUTOSIZE);
   imshow("janela",image);
  
