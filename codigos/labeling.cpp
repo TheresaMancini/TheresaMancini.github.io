@@ -56,13 +56,15 @@ int main(int argc, char** argv){
   		nbolhas++;
   		p.x=j;
   		p.y=i;
+  		int color=(int)image.at<uchar>(i,j-1);
+  		floodFill(image,p,color);
+  		floodFill(image,p,0);
   		floodFill(image,p,nbolhas);
   	  }
   	}
   }
   
   std:: cout << "numero de objetos" <<  nobjects << " e numero de bolhas eh " << nbolhas-1 <<std::endl; 
-  imshow("nimage", nimage);
   waitKey();
   imshow("image", image);
   imwrite("labeling.png", image);
