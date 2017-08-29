@@ -51,23 +51,24 @@ int main(int argc, char** argv){
   int nbolhas=0;
   for(int i=0; i<height; i++){
     for(int j=0; j<width; j++){
-      if(image.at<uchar>(i,j) == 0 && (int)image.at<uchar>(i,j-1)!=nbolhas){
-  		// achou um objeto
+      if(image.at<uchar>(i,j) == 0 && (int)image.at<uchar>(i,j-1)>nbolhas){ //se encontrar um buraco e já não tiver contado a bolha
+  		// achou uma bolha
   		nbolhas++;
-  		p.x=j;
-  		p.y=i;
-  		floodFill(image,p,nbolhas);
+  		//p.x=j;
+  		//p.y=i;
+  		//floodFill(image,p,nbolhas); // se precisar mudar a cor do buraco
   		p.x=j-1;
   		p.y=i;
   		floodFill(image,p,nbolhas);
+  		
   	  }
   	}
   }
   p.x=0;
   p.y=0;
-  floodFill(image,p,0); \\ se quiser retornar o fundo pra preto 
+ // floodFill(image,p,0); // se quiser retornar o fundo pra preto 
   
-  std:: cout << "numero de objetos" <<  nobjects << " e numero de bolhas eh " << nbolhas <<std::endl; 
+  std:: cout << "numero de objetos" <<  nobjects << " e numero de objetos com buracos eh " << nbolhas <<std::endl; 
   waitKey();
   imshow("image", image);
   imwrite("labeling.png", image);
