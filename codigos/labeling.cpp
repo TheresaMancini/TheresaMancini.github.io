@@ -48,23 +48,26 @@ int main(int argc, char** argv){
   	}
   }
   //contando bolhas
-  int nbolhas=1;
+  int nbolhas=0;
   for(int i=0; i<height; i++){
     for(int j=0; j<width; j++){
-      if(image.at<uchar>(i,j) == 0 && (int)image.at<uchar>(i,j-1)!=0){
+      if(image.at<uchar>(i,j) == 0 && (int)image.at<uchar>(i,j-1)!=nbolhas){
   		// achou um objeto
   		nbolhas++;
   		p.x=j;
   		p.y=i;
-  		int color=(int)image.at<uchar>(i,j-1);
-  		floodFill(image,p,color);
-  		floodFill(image,p,0);
+  		floodFill(image,p,nbolhas);
+  		p.x=j-1;
+  		p.y=i;
   		floodFill(image,p,nbolhas);
   	  }
   	}
   }
+  p.x=0;
+  p.y=0;
+  floodFill(image,p,0); \\ se quiser retornar o fundo pra preto 
   
-  std:: cout << "numero de objetos" <<  nobjects << " e numero de bolhas eh " << nbolhas-1 <<std::endl; 
+  std:: cout << "numero de objetos" <<  nobjects << " e numero de bolhas eh " << nbolhas <<std::endl; 
   waitKey();
   imshow("image", image);
   imwrite("labeling.png", image);
