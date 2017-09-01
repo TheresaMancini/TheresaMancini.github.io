@@ -62,7 +62,7 @@ int main(int argc, char** argv){
      for(int i=0; i<nbins; i++){
       line(histImg2,
            Point(i, histh),
-           Point(i, histh-cvRound(hist.at<float>(i))),
+           Point(i, histh-cvRound(hist2.at<float>(i))),
            Scalar(128), 1, 8, 0);
     }
     
