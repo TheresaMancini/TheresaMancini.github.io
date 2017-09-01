@@ -11,6 +11,7 @@ int main(int argc, char** argv){
   vector<Mat> planes;
   Mat histR, histR_ant;
   int nbins = 64;
+  double d;
   float range[] = {0, 256};
   const float *histrange = { range };
   bool uniform = true;
@@ -61,7 +62,17 @@ int main(int argc, char** argv){
     if (!primeiro){
     histImgR_ant.copyTo(image(Rect(0, histh,nbins, histh)));
     }
-    
+   
+    if (!primeiro){
+    	d=compareHist(histR,histR_ant,CV_COMP_CORREL);
+    	cout << d << endl;
+    	if (d<0.998){
+    	 cout << "Movimento Detectado" << endl;
+    	 imwrite("Detectado Movimento.png",image);
+    	 imshow("Detectado Movimento.png",image);
+    	}
+     
+    }
     primeiro=false;
     imshow("image", image);
     if(waitKey(30) >= 0) break;
