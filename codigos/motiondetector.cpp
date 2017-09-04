@@ -69,7 +69,7 @@ int main(int argc, char** argv){
     	if (d<0.998){
     	 cout << "Movimento Detectado" << endl;
     	 imwrite("Detectado Movimento.png",image);
-    	 imshow("Detectado Movimento.png",image);
+    	 imshow("Detectado Movimento",image);
     	}
      
     }

@@ -21,7 +21,7 @@ void menu(){
     "v - vertical\n"
 	"h - horizontal\n"
     "l - laplaciano\n"
-    "d - laplaciano do gaussiano"
+    "d - laplaciano do gaussiano\n"
 	"esc - sair\n";
 }
 
