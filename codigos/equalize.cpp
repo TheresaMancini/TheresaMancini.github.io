@@ -8,7 +8,7 @@ int main(int argc, char** argv){
   Mat image,imagegray,copia;
   int width, height;
   VideoCapture cap;
-  // vector<Mat> planes;
+  
   Mat hist,hist2;
   int nbins = 128;
   float range[] = {0, 256};
@@ -32,11 +32,10 @@ int main(int argc, char** argv){
   int histw = nbins, histh = nbins/2;
   Mat histImg(histh, histw, CV_8UC1, Scalar(0,0,0));
   Mat histImg2(histh, histw, CV_8UC1, Scalar(0,0,0));
-  //Mat histImgB(histh, histw, CV_8UC3, Scalar(0,0,0));
 
   while(1){
     cap >> image;
-    // split (image, planes);
+    
     cvtColor(image,imagegray,CV_BGR2GRAY);
     equalizeHist(imagegray,copia);
     
