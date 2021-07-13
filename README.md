@@ -1,3 +1,3 @@
 # TheresaMancini.github.io
 
-Atividades PDI
+Site com as atividades realizadas para a disciplina de Processamento Digital de Imagens. 
